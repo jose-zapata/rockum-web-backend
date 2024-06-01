@@ -19,7 +19,7 @@ return new class extends Migration {
             $table->string('mail', 250)->default('');
             $table->string('comentario', 250)->default('');
             $table->integer('fecha')->default(0);
-            $table->integer('publico')->default(0);
+            $table->integer('publico')->default(1);
         });
     }
 
