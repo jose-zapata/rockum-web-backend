@@ -18,5 +18,10 @@
       </a>
     </x-header.right>
   </x-header>
-  <x-main>Here goes the content</x-main>
+  <x-main>
+    <x-main.story image="http://rockumweb.com/nestorrockum.jpg">
+      <x-slot:title class="mb-4">Title!</x-slot:title>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus reiciendis, doloremque voluptas praesentium tempore exercitationem earum voluptatem dolorem eligendi ad sit iusto delectus accusamus quo fuga totam hic sint ducimus.
+    </x-main.story>
+  </x-main>
 </x-layout>
