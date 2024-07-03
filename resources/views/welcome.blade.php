@@ -19,9 +19,44 @@
     </x-header.right>
   </x-header>
   <x-main>
-    <x-main.story image="http://rockumweb.com/nestorrockum.jpg">
-      <x-slot:title class="mb-4">Title!</x-slot:title>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus reiciendis, doloremque voluptas praesentium tempore exercitationem earum voluptatem dolorem eligendi ad sit iusto delectus accusamus quo fuga totam hic sint ducimus.
-    </x-main.story>
+    <x-container class="bg-white p-6 max-w-7xl">
+      <div data-flickity='{ "cellAlign": "left", "percentPosition": false, "prevNextButtons": false, "autoPlay": true }' class="mb-6 w-full">
+        <x-main.story image="http://rockumweb.com/nestorrockum.jpg" class="carousel-cell w-full">
+          <x-slot:title class="mb-4">Title!</x-slot:title>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus reiciendis, doloremque voluptas praesentium tempore exercitationem earum voluptatem dolorem eligendi ad sit iusto delectus accusamus quo fuga totam hic sint ducimus.
+        </x-main.story>
+        <x-main.story image="http://rockumweb.com/nestorrockum.jpg" class="carousel-cell w-full">
+          <x-slot:title class="mb-4">Title!</x-slot:title>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus reiciendis, doloremque voluptas praesentium tempore exercitationem earum voluptatem dolorem eligendi ad sit iusto delectus accusamus quo fuga totam hic sint ducimus.
+        </x-main.story>
+        <x-main.story image="http://rockumweb.com/nestorrockum.jpg" class="carousel-cell w-full">
+          <x-slot:title class="mb-4">Title!</x-slot:title>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus reiciendis, doloremque voluptas praesentium tempore exercitationem earum voluptatem dolorem eligendi ad sit iusto delectus accusamus quo fuga totam hic sint ducimus.
+        </x-main.story>
+        <x-main.story image="http://rockumweb.com/nestorrockum.jpg" class="carousel-cell w-full">
+          <x-slot:title class="mb-4">Title!</x-slot:title>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus reiciendis, doloremque voluptas praesentium tempore exercitationem earum voluptatem dolorem eligendi ad sit iusto delectus accusamus quo fuga totam hic sint ducimus.
+        </x-main.story>
+      </div>
+    </x-container>
+    <x-container class="my-4 max-w-7xl">
+      <x-container class="flex -mx-2">
+        <x-container class="bg-white p-4 mx-2 flex-grow">Main</x-container>
+        <x-container class="mx-2 w-[300px] box-content">
+          <x-container class="mb-4 bg-white">
+            Sidebar
+          </x-container>
+          <x-container class="my-4 bg-white">
+            Sidebar
+          </x-container>
+          <x-container class="my-4 bg-white">
+            Sidebar
+          </x-container>
+          <x-container class="my-4 bg-white">
+            Sidebar
+          </x-container>
+        </x-container>
+      </x-container>
+    </x-container>
   </x-main>
 </x-layout>

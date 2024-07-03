@@ -1,3 +1,4 @@
+@import 'flickity/css/flickity.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
