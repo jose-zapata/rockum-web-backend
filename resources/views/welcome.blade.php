@@ -19,7 +19,7 @@
     </x-header.right>
   </x-header>
   <x-main>
-    <x-container class="bg-white p-6 max-w-7xl">
+    <x-container class="bg-white p-6 max-w-7xl border border-neutral-300 rounded-lg">
       <div data-flickity='{ "cellAlign": "left", "percentPosition": false, "prevNextButtons": false, "autoPlay": true }' class="mb-6 w-full">
         <x-main.story image="http://rockumweb.com/nestorrockum.jpg" class="carousel-cell w-full">
           <x-slot:title class="mb-4">Title!</x-slot:title>
@@ -41,18 +41,58 @@
     </x-container>
     <x-container class="my-4 max-w-7xl">
       <x-container class="flex -mx-2">
-        <x-container class="bg-white p-4 mx-2 flex-grow">Main</x-container>
-        <x-container class="mx-2 w-[300px] box-content">
-          <x-container class="mb-4 bg-white">
+        <x-container class="flex flex-col mx-2">
+          <h2 class="font-new-rocker text-5xl mt-3 mb-4">Latest news</h2>
+          <x-container class=" my-2 -mx-2 w-full flex flex-wrap content-baseline">
+            <x-container class="w-1/2">
+              <x-story
+                title="Cam Pipes from 3 Inches of Blood"
+                image="https://rockumweb.com/3inchesINTERVIEWROCKUM.jpg"
+                link="https://rockumweb.com/entrevista/128/cam-pipes-from-3-inches-of-blood-tour-secrets-more-exclusive-interview-rockum-tv-"
+                class="mx-2 my-2 p-4 bg-white border border-neutral-400 rounded-md">
+                Cam Pipes from 3 Inches of Blood: Tour Secrets & More | Exclusive Interview | Rockum TV
+              </x-story>
+            </x-container>
+            <x-container class="w-1/2">
+              <x-story
+                title="Cam Pipes from 3 Inches of Blood"
+                image="https://rockumweb.com/3inchesINTERVIEWROCKUM.jpg"
+                link="https://rockumweb.com/entrevista/128/cam-pipes-from-3-inches-of-blood-tour-secrets-more-exclusive-interview-rockum-tv-"
+                class="mx-2 my-2 p-4 bg-white border border-neutral-400 rounded-md">
+                Cam Pipes from 3 Inches of Blood: Tour Secrets & More | Exclusive Interview | Rockum TV
+              </x-story>
+            </x-container>
+            <x-container class="w-1/2">
+              <x-story
+                title="Cam Pipes from 3 Inches of Blood"
+                image="https://rockumweb.com/3inchesINTERVIEWROCKUM.jpg"
+                link="https://rockumweb.com/entrevista/128/cam-pipes-from-3-inches-of-blood-tour-secrets-more-exclusive-interview-rockum-tv-"
+                class="mx-2 my-2 p-4 bg-white border border-neutral-400 rounded-md">
+                Cam Pipes from 3 Inches of Blood: Tour Secrets & More | Exclusive Interview | Rockum TV
+              </x-story>
+            </x-container>
+            <x-container class="w-1/2">
+              <x-story
+                title="Cam Pipes from 3 Inches of Blood"
+                image="https://rockumweb.com/3inchesINTERVIEWROCKUM.jpg"
+                link="https://rockumweb.com/entrevista/128/cam-pipes-from-3-inches-of-blood-tour-secrets-more-exclusive-interview-rockum-tv-"
+                class="mx-2 my-2 p-4 bg-white border border-neutral-400 rounded-md">
+                Cam Pipes from 3 Inches of Blood: Tour Secrets & More | Exclusive Interview | Rockum TV
+              </x-story>
+            </x-container>
+          </x-container>
+        </x-container>
+        <x-container class="flex flex-col mx-2 w-[300px] flex-shrink-0">
+          <x-container class="my-2 p-4 w-full bg-white">
             Sidebar
           </x-container>
-          <x-container class="my-4 bg-white">
+          <x-container class="my-2 p-4 w-full bg-white">
             Sidebar
           </x-container>
-          <x-container class="my-4 bg-white">
+          <x-container class="my-2 p-4 w-full bg-white">
             Sidebar
           </x-container>
-          <x-container class="my-4 bg-white">
+          <x-container class="my-2 p-4 w-full bg-white">
             Sidebar
           </x-container>
         </x-container>
