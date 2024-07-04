@@ -13,6 +13,8 @@ return new class extends Migration {
         Schema::table('eternal', function (Blueprint $table) {
             $table->renameColumn('eternal_id', 'id');
             $table->renameColumn('fecha', 'fecha_number');
+        });
+        Schema::table('eternal', function (Blueprint $table) {
             $table->timestamp('fecha');
             $table->timestamp('fecha_comienzo');
             $table->timestamp('fecha_fin');
@@ -27,9 +29,11 @@ return new class extends Migration {
     {
         Schema::table('eternal', function (Blueprint $table) {
             $table->dropTimestamps();
-            $table->dropTimestamp('fecha_fin');
-            $table->dropTimestamp('fecha_comienzo');
-            $table->dropTimestamp('fecha');
+            $table->dropColumn('fecha_fin');
+            $table->dropColumn('fecha_comienzo');
+            $table->dropColumn('fecha');
+        });
+        Schema::table('eternal', function (Blueprint $table) {
             $table->renameColumn('fecha_number', 'fecha');
             $table->renameColumn('id', 'eternal_id');
         });

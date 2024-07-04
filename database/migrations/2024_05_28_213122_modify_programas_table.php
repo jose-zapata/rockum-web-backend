@@ -26,7 +26,7 @@ return new class extends Migration
     {
         Schema::table('programas', function (Blueprint $table) {
             $table->dropTimestamps();
-            $table->dropTimestamp('fecha');
+            $table->dropColumn('fecha');
             $table->renameColumn('fecha_string', 'fechap');
             $table->renameColumn('id', 'programa_id');
         });

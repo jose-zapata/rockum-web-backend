@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::table('ondemand', function (Blueprint $table) {
             $table->renameColumn('od_id', 'id');
             $table->renameColumn('fecha', 'fecha_number');
+        });
+        Schema::table('ondemand', function (Blueprint $table) {
             $table->timestamp('fecha');
             $table->timestamps();
         });
@@ -26,7 +28,9 @@ return new class extends Migration
     {
         Schema::table('ondemand', function (Blueprint $table) {
             $table->dropTimestamps();
-            $table->dropTimestamp('fecha');
+            $table->dropColumn('fecha');
+        });
+        Schema::table('ondemand', function (Blueprint $table) {
             $table->renameColumn('fecha_number', 'fecha');
             $table->renameColumn('id', 'od_id');
         });
