@@ -10,9 +10,11 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::table('records', function (Blueprint $table) {
-            $table->renameColumn('record_id', 'id');
-            $table->renameColumn('Formato', 'formato');
+        Schema::table('reportajes', function (Blueprint $table) {
+            $table->renameColumn('reportaje_id', 'id');
+            $table->renameColumn('fecha', 'fecha_numero');
+        });
+        Schema::table('reportajes', function (Blueprint $table) {
             $table->timestamp('fecha')->nullable();
             $table->timestamps();
         });
@@ -23,11 +25,13 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::table('records', function (Blueprint $table) {
-            $table->renameColumn('id', 'record_id');
-            $table->renameColumn('formato', 'Formato');
+        Schema::table('reportajes', function (Blueprint $table) {
             $table->dropColumn('fecha');
             $table->dropTimestamps();
+        });
+        Schema::table('reportajes', function (Blueprint $table) {
+            $table->renameColumn('id', 'reportaje_id');
+            $table->renameColumn('fecha_numero', 'fecha');
         });
     }
 };

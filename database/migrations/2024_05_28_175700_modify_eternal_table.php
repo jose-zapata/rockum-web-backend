@@ -15,9 +15,9 @@ return new class extends Migration {
             $table->renameColumn('fecha', 'fecha_number');
         });
         Schema::table('eternal', function (Blueprint $table) {
-            $table->timestamp('fecha');
-            $table->timestamp('fecha_comienzo');
-            $table->timestamp('fecha_fin');
+            $table->timestamp('fecha')->nullable();
+            $table->timestamp('fecha_comienzo')->nullable();
+            $table->timestamp('fecha_fin')->nullable();
             $table->timestamps();
         });
     }

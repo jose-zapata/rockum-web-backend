@@ -10,11 +10,11 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::table('ondemand', function (Blueprint $table) {
-            $table->renameColumn('od_id', 'id');
-            $table->renameColumn('fecha', 'fecha_number');
+        Schema::table('request', function (Blueprint $table) {
+            $table->renameColumn('idr', 'id');
+            $table->renameColumn('fecha', 'fecha_numero');
         });
-        Schema::table('ondemand', function (Blueprint $table) {
+        Schema::table('request', function (Blueprint $table) {
             $table->timestamp('fecha')->nullable();
             $table->timestamps();
         });
@@ -25,13 +25,13 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::table('ondemand', function (Blueprint $table) {
+        Schema::table('request', function (Blueprint $table) {
             $table->dropTimestamps();
             $table->dropColumn('fecha');
         });
-        Schema::table('ondemand', function (Blueprint $table) {
-            $table->renameColumn('fecha_number', 'fecha');
-            $table->renameColumn('id', 'od_id');
+        Schema::table('request', function (Blueprint $table) {
+            $table->renameColumn('id', 'idr');
+            $table->renameColumn('fecha_numero', 'fecha');
         });
     }
 };
