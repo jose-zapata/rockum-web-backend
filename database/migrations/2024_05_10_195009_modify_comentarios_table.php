@@ -15,7 +15,7 @@ return new class () extends Migration {
             $table->renameColumn('fecha', 'fecha_number');
         });
         Schema::table('comentarios', function (Blueprint $table) {
-            $table->timestamp('fecha');
+            $table->timestamp('fecha')->nullable();
             $table->timestamps();
         });
     }

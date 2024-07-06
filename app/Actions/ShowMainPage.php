@@ -2,8 +2,8 @@
 
 namespace App\Actions;
 
+use App\Models\Report;
 use App\Models\Interview;
-use Illuminate\Http\Request;
 use Lorisleiva\Actions\Concerns\AsAction;
 
 class ShowMainPage
@@ -12,14 +12,16 @@ class ShowMainPage
 
     public function handle()
     {
-        $mainInterviews = Interview::orderBy('id', 'desc')
-            ->take(4)
+        $mainReports = Report::orderBy('id', 'desc')
+            ->take(6)
             ->get();
         $interviews = Interview::orderBy('id', 'desc')
-            ->skip(4)
-            ->take(20)
+            ->take(12)
             ->get();
-        return view('welcome', compact('mainInteviews', 'interviews'));
+        $reports = Report::orderBy('id', 'desc')
+            ->take(12)
+            ->get();
+        return view('welcome', compact('mainReports', 'interviews', 'reports'));
     }
 
 }

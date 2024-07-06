@@ -9,6 +9,8 @@ return [
     'fonts' => [
         'default' => 'https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,400;1,700',
         'new-rocker' => 'https://fonts.googleapis.com/css2?family=New+Rocker',
+        'oswald' => 'https://fonts.googleapis.com/css2?family=Oswald:wght@200..700',
+        'roboto-condensed' => 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900'
     ],
 
     /*

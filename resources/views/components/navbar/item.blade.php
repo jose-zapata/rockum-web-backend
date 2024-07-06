@@ -1,1 +1,1 @@
-<a href="{{ $href }}" class="mr-5 font-medium leading-6 text-gray-300 hover:text-white hover:underline">{{ $slot }}</a>
+<a href="{{ $href }}" {{ $attributes->merge(['class' => 'px-6 py-3 uppercase border-x border-slate-200 block font-medium leading-6 text-black bg-white hover:text-white hover:bg-black']) }}>{{ $slot }}</a>

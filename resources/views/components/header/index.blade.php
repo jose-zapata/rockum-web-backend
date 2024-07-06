@@ -1,5 +1,3 @@
-<section class="w-full px-0 md:px-4 text-white bg-red-950">
-  <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl ">
+<section class="container-full px-0 text-white border-b border-gray-200 fixed z-50 top-0 left-0 right-0 basis-full bg-black flex items-center">
     {{ $slot }}
-  </div>
 </section>

@@ -21,6 +21,6 @@ class Interview extends Model
     {
         return Attribute::make(
             get: fn (mixed $value, array $attrs) => url('interview/' . $attrs['id'] . '/' . Str::slug($attrs['titulo']))
-        )
+        );
     }
 }
