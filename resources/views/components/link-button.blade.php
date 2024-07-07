@@ -1,28 +1,46 @@
 @props([
-  'color' => '', 
-  'textcolor' => 'white',
+  'color' => '',
+  'bordercolor' => '',
+  'hovercolor' => '',
+  'textcolor' => 'text-white',
   'type' => 'primary'
 ])
 @switch($type)
   @case('primary')
     @php 
-      $color = 'blue' 
+      $color = 'bg-blue-500';
+      $bordercolor = 'border-blue-500';
+      $hovercolor = 'hover:bg-blue-700' 
     @endphp
     @break
   @case('success')
-    @php $color = 'green' @endphp
+    @php 
+      $color = 'bg-green-500';
+      $bordercolor = 'border-green-500';
+      $hovercolor = 'hover:bg-green-700' 
+    @endphp
     @break
   @case('danger')
-    @php $color = 'red' @endphp
+    @php 
+      $color = 'bg-red-500';
+      $bordercolor = 'border-red-500';
+      $hovercolor = 'hover:bg-red-700' 
+    @endphp
     @break
   @case('warning')
-    @php $color = 'orange' @endphp
+    @php 
+      $color = 'bg-orange-500';
+      $bordercolor = 'border-orange-500';
+      $hovercolor = 'hover:bg-orange-700' 
+    @endphp
     @break
   @default
     @php 
-      $color = 'grey';
-      $textcolor = 'grey-200'
+      $color = 'bg-grey-500';
+      $bordercolor = 'border-grey-500';
+      $hovercolor = 'hover:bg-grey-700';
+      $textcolor = 'text-grey-200'
     @endphp
     @break
 @endswitch
-<a href="#" {{ $attributes->merge(["class" => "inline-block bg-{$color}-500 hover:bg-{$color}-700 text-{$textcolor} py-2 px-4 border border-{$color}-700 rounded"]) }}>{{ $slot }}</a>
+<a href="#" {{ $attributes->merge(["class" => "inline-block {$color} {$hovercolor} {$textcolor} py-2 px-4 border {$bordercolor} rounded"]) }}>{{ $slot }}</a>
