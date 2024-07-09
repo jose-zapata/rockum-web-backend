@@ -1,3 +1,3 @@
-<section {{ $attributes->merge(["class" => "max-w-6xl mx-auto"]) }}>
+<section {{ $attributes->merge(["class" => "max-w-[1024px] mx-auto"]) }}>
   {{ $slot }}
 </section>
