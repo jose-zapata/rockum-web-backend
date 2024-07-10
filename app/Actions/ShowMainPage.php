@@ -19,6 +19,7 @@ class ShowMainPage
             ->take(12)
             ->get();
         $reports = Report::orderBy('id', 'desc')
+            ->skip(6)
             ->take(12)
             ->get();
         return view('welcome', compact('mainReports', 'interviews', 'reports'));
