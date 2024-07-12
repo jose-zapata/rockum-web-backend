@@ -1,6 +1,6 @@
 <x-row {{ $attributes->merge(['class'=>'carousel-cell w-full']) }}>
   <x-col class="w-full">
-    <h2 class="text-3xl font-semibold font-oswald mb-auto pb-4 mt-3 w-full sm:mt-0 truncate">{{ $title }}</h2>
+    <h2 class="text-3xl font-oswald mb-auto pb-4 w-full truncate">{{ $title }}</h2>
     <x-row class="flex-wrap">
       <x-col class="basis-full md:basis-1/2 mb-4 md:mb-0">
         @if ($image)

@@ -1,3 +1,3 @@
-<a href="{{ $link ?? '/' }}" class="flex shrink-0 font-medium lg:w-auto items-center mx-auto">
-  <img src="{{ $src ?? asset('storage/images/logo.png') }}" class="h-[48px] pl-6 pr-8 py-1" />
+<a href="{{ $link ?? '/' }}" class="flex shrink-0 font-medium lg:w-auto items-center">
+  <img src="{{ $src ?? Vite::asset('resources/images/logo_rockum.png') }}" class="transition-all h-14 md:h-20 lg:h-24 p-1" />
 </a>

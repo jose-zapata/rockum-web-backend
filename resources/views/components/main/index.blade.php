@@ -5,12 +5,12 @@
 >
   <div 
     @scroll.window = "
-      percentValue = (window.scrollY / ($el.scrollHeight - document.documentElement.clientHeight - $el.offsetTop)) * 100;
+      percentValue = (window.scrollY / ($el.scrollHeight - document.documentElement.clientHeight)) * 100;
       percent = Math.min(100, percentValue);
     "
     x-bind:style="{'background-position-y': percent + '%'}"
-    class="container-full p-4 mt-12 md:mt-24 lg:mt-12 bg-no-repeat bg-contain" style="background-image: url('{{ Vite::asset('resources/images/concert-ambience.jpg') }}')">
-    <section id="main-content" class="max-w-[1090px] mx-auto border border-neutral-300 p-6 bg-white">
+    class="container-full bg-fixed bg-cover p-0 mt-14 bg-no-repeat md:p-6 md:mt-32 lg:mt-24 " style="background-image: url('{{ Vite::asset('resources/images/concert-ambience.jpg') }}')">
+    <section id="main-content" class="max-w-[1090px] mx-auto border-0 border-neutral-300 p-6 bg-white ">
       {{ $slot }}
     </section>
   </div>

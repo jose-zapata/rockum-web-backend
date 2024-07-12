@@ -14,7 +14,7 @@
       <x-row class="flex-wrap lg:flex-nowrap">
         <x-col class="main-content">
 
-          <h2 class="font-new-rocker text-4xl mt-3 mb-2">Latest news</h2>
+          <h2 class="text-4xl mt-3 mb-2 font-oswald uppercase font-semibold">Latest news</h2>
           <x-row class="my-2 flex-wrap content-baseline">
             @foreach ($reports as $item)
               <x-col class="basis-full sm:basis-1/2">
@@ -27,21 +27,6 @@
               </x-col>
             @endforeach
           </x-row>
-
-          <h2 class="font-new-rocker text-4xl mt-3 mb-2">Latest news</h2>
-          <x-row class="my-2 flex-wrap content-baseline">
-            @foreach ($reports as $item)
-              <x-col class="basis-full sm:basis-1/2">
-                <x-story
-                  title="{{ Str::limit($item->titulo, 50, '...') }}"
-                  image="{{ $item->imagen }}"
-                  link="{{ $item->url }}"
-                  class="my-2">
-                </x-story>
-              </x-col>
-            @endforeach
-          </x-row>
-
         </x-col>
         <x-col class="lg:w-[300px] flex-shrink-0 w-full sidebar">
           Sidebar

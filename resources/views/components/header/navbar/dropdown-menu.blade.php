@@ -14,21 +14,14 @@
     }
   }"
 >
-  <div x-on:click.stop="toggle()"
-    @class([
-      $attributes['class'],
-      'content-center cursor-pointer relative uppercase border-x font-medium leading-6 block',
-      'text-black bg-white hover:text-white hover:bg-black' => $type == 'black',
-      'bg-red-700 hover:bg-red-600 text-white' => $type == 'red'
-    ])
-  >
+  <x-header.navbar.item @class([$attributes['class']]) x-on:click.stop="toggle()" :type="$type">
     <div class="flex">
       <div class="mr-2">{{ $label }}</div>
       <div :class="{ 'rotate-90': isOpen }" class="ml-auto transition-transform"><i class="fa-solid fa-caret-right"></i></div>
     </div>
-  </div>
+  </x-header.navbar.item>
   <template x-if="isOpen">
-    <x-header.navbar class="md:absolute top-[102%] border flex-col w-48">
+    <x-header.navbar class="static md:absolute top-[102%] border flex-col">
       {{ $slot }}
     </x-header.navbar>
   </template>

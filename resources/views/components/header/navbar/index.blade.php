@@ -1,3 +1,3 @@
-<nav x-transition {{ $attributes->merge(["class" => "flex font-oswald text-base bg-white content-center"]) }}">
+<nav x-transition {{ $attributes->merge(["class" => "flex top-full font-oswald text-base bg-white lg:bg-transparent"]) }}">
   {{ $slot }}
 </nav>
