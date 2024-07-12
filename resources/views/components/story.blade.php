@@ -4,7 +4,7 @@
     <h2 class="text-2xl font-oswald mb-4"><a href="{{ $link }}">{!! $title !!}</a></h2>
     {{ $slot }}
     <div class="ml-auto mt-auto">
-      <x-link-button class="font-semibold text-sm mt-4">Read more</x-link-button>
+      <x-link-button class="font-semibold text-sm">Read more</x-link-button>
     </div>
   </div>
 </div>
