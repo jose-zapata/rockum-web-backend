@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="text-sm sm:text-base">
 <head>
-  @googlefonts('new-rocker', 'oswald')
+  @googlefonts
+  @googlefonts('roboto-condensed')
+  @googlefonts('oswald')
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ $title ?? 'Rockum web' }}</title>

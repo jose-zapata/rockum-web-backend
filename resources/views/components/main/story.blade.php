@@ -9,7 +9,7 @@
       </x-col>
       <x-col class="basis-full md:basis-1/2 justify-between">
         <div class="text-xl">{{ $slot }}</div>
-        <div class="ml-auto mt-4"><x-link-button class="font-semibold">Read more</x-link-button></div>
+        <div class="ml-auto mt-4"><x-button class="font-semibold uppercase font-oswald  hover:text-neutral-400">Read the full story <i class="fa-solid fa-arrow-right"></i></x-button></div>
       </x-col>
     </x-row>
   </x-col>
