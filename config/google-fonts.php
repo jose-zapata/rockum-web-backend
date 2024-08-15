@@ -8,8 +8,8 @@ return [
      */
     'fonts' => [
         'default' => 'https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,400;1,700&display=swap',
-        'oswald' => 'https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap',
-        'roboto-condensed' => 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'
+        'bebas-neue' => 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap',
+        'open-sans' => 'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap',
     ],
 
     /*

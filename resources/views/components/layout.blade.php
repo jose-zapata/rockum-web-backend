@@ -12,7 +12,7 @@
   @vite('resources/js/app.js')
   @stack('scripts')
 </head>
-<body class="font-default antialiased bg-gray-200 dark:bg-black dark:text-white/50">
+<body class="font-default antialiased bg-white dark:bg-black dark:text-white/50">
   <x-header>
     <x-header.main-menu></x-header.main-menu>
   </x-header>

@@ -14,7 +14,7 @@
       <x-row class="flex-wrap lg:flex-nowrap">
         <x-col class="main-content">
 
-          <h2 class="text-4xl mt-3 mb-2 font-oswald uppercase font-semibold">Latest news</h2>
+          <h2 class="text-4xl mt-3 mb-2 font-bebas-neue uppercase font-semibold">Latest news</h2>
           <x-row class="my-2 flex-wrap content-baseline">
             @foreach ($reports as $item)
               <x-col class="basis-full sm:basis-1/2">

@@ -8,10 +8,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'default': ['"Roboto Condensed"'],
-        'new-rocker': ['"New Rocker"'],
-        'oswald': ['Oswald'],
-        'roboto-condensed': ['"Roboto Condensed"'],
+        'default': ['"Open Sans"'],
+        'open-sans': ['"Open Sans"'],
+        'bebas-neue': ['"Bebas Neue"'],
       },
     },
   },
