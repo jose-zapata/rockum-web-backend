@@ -1,6 +1,6 @@
 <x-layout title="Rockum web">
   <x-main>
-    <x-section class="my-4 main">
+    <x-section class="mb-4 main">
       <x-row class="flex-wrap lg:flex-nowrap">
         <x-col class="main-content">
           <h2 class="text-4xl mt-3 mb-2 font-bebas-neue uppercase font-semibold">Latest news</h2>
