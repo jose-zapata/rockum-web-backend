@@ -18,7 +18,7 @@
             <x-col class="basis-1/2">
               @foreach ($reports->skip(3)->take(1) as $item)
                 <img src="{{ $item->imagen }}" class="block" />
-                <h2 class="text-xl font-bebas-neue p-2  text-white bg-gray-700"><a href="{{ $item->url }}">{!! $item->titulo !!}</a></h2>
+                <h2 class="text-2xl font-bebas-neue p-2 text-white font-semibold bg-neutral-500"><a href="{{ $item->url }}">{!! $item->titulo !!}</a></h2>
               @endforeach
             </x-col>
             <x-col class="basis-1/4">
