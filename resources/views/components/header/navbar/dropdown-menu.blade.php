@@ -21,7 +21,7 @@
     </div>
   </x-header.navbar.item>
   <template x-if="isOpen">
-    <x-header.navbar class="static md:absolute top-[102%] border flex-col">
+    <x-header.navbar class="static lg:absolute top-[102%] border flex-col">
       {{ $slot }}
     </x-header.navbar>
   </template>

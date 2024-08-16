@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="text-sm sm:text-base">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
   @googlefonts
   @googlefonts('roboto-condensed')
@@ -14,6 +14,7 @@
 </head>
 <body class="font-default antialiased bg-white dark:bg-black dark:text-white/50">
   <x-header>
+    <x-header.top-banner></x-header.top-banner>
     <x-header.main-menu></x-header.main-menu>
   </x-header>
   {{ $slot }}
