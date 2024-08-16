@@ -15,12 +15,13 @@
                 </x-story>
               @endforeach
             </x-col>
-            <x-col class="basis-1/2">
+            <x-col class="basis-1/2 min-w-80">
               <h2 class="text-3xl mb-2 font-bebas-neue font-semibold">&nbsp;</h2>
               @foreach ($reports->skip(3)->take(1) as $item)
                 <a href="{{ $item->url }}"><img src="{{ $item->imagen }}" class="block" /></a>
                 <h2 class="text-2xl font-bebas-neue p-2 text-white font-semibold bg-neutral-500"><a href="{{ $item->url }}" class="block">{!! $item->titulo !!}</a></h2>
               @endforeach
+                <img class="max-w-none mt-4 block mx-auto" src="https://www.adspeed.com/placeholder-300x100.gif" />
             </x-col>
             <x-col class="basis-1/4">
               <h2 class="text-3xl mb-2 font-bebas-neue font-semibold">Rockum radio</h2>
