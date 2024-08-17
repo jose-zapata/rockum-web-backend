@@ -4,7 +4,7 @@
       <x-row class="flex-wrap lg:flex-nowrap">
         <x-col class="hero-content">
           <x-row class="mt-2 flex-wrap content-baseline">
-            <x-col class="basis-1/4 lg:basis-1/5">
+            <x-col class="basis-full md:basis-1/4 lg:basis-1/5">
               <h2 class="text-3xl mb-2 font-bebas-neue font-semibold">Latest news</h2>
               <x-row class="flex-wrap h-full content-between">
                 @foreach ($reports->take(3) as $item)
@@ -18,7 +18,7 @@
                 @endforeach
               </x-row>
             </x-col>
-            <x-col class="basis-1/2 lg:basis-2/5 min-w-80">
+            <x-col class="basis-full md:basis-1/2 lg:basis-2/5 min-w-80">
               <x-row class="flex-wrap">
                 <x-col class="basis-full"><h2 class="text-3xl mb-2 font-bebas-neue font-semibold">&nbsp;</h2></x-col>
                 @foreach ($reports->skip(3)->take(1) as $item)
@@ -30,7 +30,7 @@
                 <x-col class="basis-full"><img class="max-w-none mt-4 block mx-auto" src="https://www.adspeed.com/placeholder-300x200.gif" /></x-col>
               </x-row>
             </x-col>
-            <x-col class="basis-1/4 lg:basis-1/5">
+            <x-col class="basis-full md:basis-1/4 lg:basis-1/5">
               <h2 class="text-3xl mb-2 font-bebas-neue font-semibold">Rockum radio</h2>
               <x-row class="flex-wrap h-full content-between">
                 @foreach ($radioshows->take(3) as $item)
