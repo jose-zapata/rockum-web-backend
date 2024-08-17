@@ -20,7 +20,7 @@ class Report extends Model
     protected function url() : Attribute
     {
         return Attribute::make(
-            get: fn (mixed $value, array $attrs) => url('interview/' . $attrs['id'] . '/' . Str::slug($attrs['titulo']))
+            get: fn (mixed $value, array $attrs) => url('story/' . $attrs['id'] . '/' . Str::slug($attrs['titulo']))
         );
     }    
 }

@@ -3,6 +3,9 @@
 namespace App\Actions;
 
 use App\Models\Report;
+use App\Models\Review;
+use App\Models\Eternal;
+use App\Models\Ondemand;
 use App\Models\Interview;
 use Lorisleiva\Actions\Concerns\AsAction;
 
@@ -12,17 +15,23 @@ class ShowMainPage
 
     public function handle()
     {
-        $mainReports = Report::orderBy('id', 'desc')
-            ->take(6)
-            ->get();
         $interviews = Interview::orderBy('id', 'desc')
-            ->take(12)
+            ->take(9)
             ->get();
         $reports = Report::orderBy('id', 'desc')
-            ->skip(6)
-            ->take(12)
+            ->take(20)
             ->get();
-        return view('welcome', compact('mainReports', 'interviews', 'reports'));
+        $radioshows = Ondemand::orderBy('id', 'desc')
+            ->take(20)
+            ->get();
+        $eternal = Eternal::orderBy('id', 'desc')
+            ->take(8)
+            ->get();
+        $reviews = Review::orderBy('id', 'desc')
+            ->take(3)
+            ->get();
+
+        return view('welcome', compact('interviews', 'reports', 'radioshows', 'eternal', 'reviews'));
     }
 
 }

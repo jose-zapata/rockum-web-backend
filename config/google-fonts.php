@@ -2,7 +2,7 @@
 
 return [
 
-    /*
+    /*w
      * Here you can register fonts to call from the @googlefonts Blade directive.
      * The google-fonts:fetch command will prefetch these fonts.
      */
