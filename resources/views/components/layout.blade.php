@@ -16,5 +16,8 @@
     <x-header.main-menu></x-header.main-menu>
   </x-header>
   {{ $slot }}
+  <x-footer>
+    <x-footer.logo></x-footer.logo>
+  </x-footer>  
 </body>
 </html>

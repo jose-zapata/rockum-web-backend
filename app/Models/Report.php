@@ -9,18 +9,24 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Report extends Model
 {
-    protected $table = 'reportajes';
     use HasFactory;
-    protected function imagen() : Attribute
+    protected $table = 'reportajes';
+    protected function imagen(): Attribute
     {
         return Attribute::make(
             get: fn (mixed $value) => 'https://www.rockumweb.com/' . $value,
         );
     }
-    protected function url() : Attribute
+    protected function imagen2(): Attribute
+    {
+        return Attribute::make(
+            get: fn (mixed $value) => 'https://www.rockumweb.com/' . $value,
+        );
+    }
+    protected function url(): Attribute
     {
         return Attribute::make(
             get: fn (mixed $value, array $attrs) => url('story/' . $attrs['id'] . '/' . Str::slug($attrs['titulo']))
         );
-    }    
+    }
 }
