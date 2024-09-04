@@ -1,11 +1,10 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -15,7 +14,9 @@ return new class extends Migration
         Schema::table('noticias', function (Blueprint $table) {
             $table->renameColumn('noticia_id', 'id');
             $table->renameColumn('fecha', 'fecha_number');
-            $table->timestamp('fecha');
+        });
+        Schema::table('noticias', function (Blueprint $table) {
+            $table->timestamp('fecha')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +29,8 @@ return new class extends Migration
         Schema::table('noticias', function (Blueprint $table) {
             $table->dropTimestamps();
             $table->dropColumn('fecha');
+        });
+        Schema::table('noticias', function (Blueprint $table) {
             $table->renameColumn('fecha_number', 'fecha');
             $table->renameColumn('id', 'noticia_id');
         });

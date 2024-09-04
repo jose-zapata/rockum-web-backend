@@ -1,0 +1,2 @@
+<a href="{{ $link ?? '/' }}" class="block"><img src="{{ $src ?? Vite::asset('resources/images/logo.png') }}" class="max-w-none transition-all m-auto h-6" /></a>
+<p class="m-auto mt-2 text-gray-800">&copy; 2002-2024 <a href="/">rockumweb.com</a></p>

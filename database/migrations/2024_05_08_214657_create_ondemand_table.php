@@ -1,11 +1,10 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
-return new class extends Migration
-{
+return new class () extends Migration {
     /**
      * Run the migrations.
      */
@@ -13,11 +12,11 @@ return new class extends Migration
     {
         Schema::create('ondemand', function (Blueprint $table) {
             $table->integer('od_id', true);
-            $table->text('artista')->default('');
+            $table->text('artista');
             $table->string('cancion', 250)->default('');
             $table->string('enlace', 200)->default('');
             $table->string('imagen')->default('');
-            $table->text('review')->default('');
+            $table->text('review');
             $table->integer('fecha')->default(0);
         });
     }
