@@ -28,16 +28,26 @@
   <x-header.navbar x-show="isOpen" class="max-w-7xl m-auto flex-col lg:flex-row flex-wrap absolute lg:static left-0 w-full h-screen lg:h-auto border-t lg:border-t-0">
     <div class="flex flex-col lg:flex-row justify-items-left h-auto" href="#">
       <x-header.navbar.item class="px-3 py-2" href="#">Home</x-header.navbar.item>
-      <x-header.navbar.item class="px-3 py-2" href="#">Radio</x-header.navbar.item>
-      <x-header.navbar.item class="px-3 py-2" href="#">Podcast</x-header.navbar.item>
+      <x-header.navbar.dropdown-menu class="px-3 py-2 border-0 lg:h-full" label="Radio" id="radio">
+        <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Episodes</x-header.navbar.item>
+        <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Podcasts</x-header.navbar.item>
+        <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Rockum Radio</x-header.navbar.item>
+        <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Submissions</x-header.navbar.item>
+      </x-header.navbar.dropdown-menu>
+      <x-header.navbar.dropdown-menu class="px-3 py-2 border-0 lg:h-full" label="Rockum TV" id="rockum-tv">
+        <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Episodes</x-header.navbar.item>
+      </x-header.navbar.dropdown-menu>
       <x-header.navbar.item class="px-3 py-2" href="#">Interviews</x-header.navbar.item>
       <x-header.navbar.item class="px-3 py-2" href="#">News</x-header.navbar.item>
       <x-header.navbar.item class="px-3 py-2" href="#">Reviews</x-header.navbar.item>
+      <x-header.navbar.item class="px-3 py-2" href="#">Eternal</x-header.navbar.item>
+      <x-header.navbar.item class="px-3 py-2" href="#">Español</x-header.navbar.item>
       <x-header.navbar.item class="px-3 py-2" href="#">Concerts</x-header.navbar.item>
       <x-header.navbar.dropdown-menu class="px-3 py-2 border-0 lg:h-full" label="More" id="more">
-        <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">About us</x-header.navbar.item>
+        <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">About Rockum</x-header.navbar.item>
         <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Gino Alache</x-header.navbar.item>
-        <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Photo Gallery</x-header.navbar.item>
+        <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Gallery</x-header.navbar.item>
+        <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Contact</x-header.navbar.item>
       </x-header.navbar.dropdown-menu>
     </div>
     <div class="flex justify-items-center border-t lg:border-t-0 lg:ml-auto" href="#">
