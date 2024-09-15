@@ -1,10 +1,14 @@
 @props([
-  'story'
+  'eternal'
 ])
-<div {{ $attributes->merge(['class' => 'overflow-visible flex flex-col relative']) }}>
-  <img src="{{ $story->imagen }}" class="w-full block object-cover" />
+<div {{ $attributes->merge(['class' => 'overflow-visible flex flex-col relative max-w-2xl mx-auto']) }}>
+  <img src="{{ $eternal->imagen }}" class="w-full block object-cover" />
   <div class="p-0 absolute bottom-0">
-    <h1 class="text-lg sm:text-2xl md:text-4xl font-bebas-neue text-white p-4"><a href="{{ $story->url }}">{!! $story->titulo !!}</a></h1>
+    <h1 class="text-xl sm:text-2xl md:text-4xl font-bebas-neue text-white p-4">
+      {!! $eternal->artista !!}<br />
+      <span class="text-xl sm:text-2xl md:text-3xl">{!! $eternal->bandas !!}</span><br />
+      <span class="text-base sm:text-xl md:text-2xl">{!! $eternal->fechabd !!}</span>
+    </h1>
   </div>
 </div>
 <x-row class="mt-3">

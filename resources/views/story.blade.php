@@ -1,5 +1,14 @@
-<x-layout title="Rockum web">
+<x-layout title="{{ $story->titulo }}">
   <x-main>
+    <style>
+      .video {
+        aspect-ratio: 16 / 9;
+      }
+      .video iframe {
+        width: 100%;
+        height: 100%;
+      }
+    </style>     
     <x-section class="main mb-4">
       <x-row class="flex-wrap lg:flex-nowrap">
         <x-col class="main-content">

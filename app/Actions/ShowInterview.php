@@ -9,8 +9,14 @@ class ShowInterview
 {
     use AsAction;
 
-    public function handle(Interview $interview, string $slug)
+    public function handle($id)
     {
         // ...
+    }
+
+    public function asController(Interview $interview)
+    {
+        $more_rockum = Interview::orderBy('id', 'desc')->whereNot('id', $interview->id)->take(6)->get();
+        return view('interview', compact('interview', 'more_rockum'));
     }
 }
