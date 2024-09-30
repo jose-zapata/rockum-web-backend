@@ -1,14 +1,14 @@
 <x-row class="mb-4 flex-wrap ads justify-center">
   <x-col class="basis-full sm:basis-1/2 lg:basis-full">
-    <img class="mx-auto block max-w-none" src="https://www.adspeed.com/placeholder-300x250.gif"
+    <img class="mx-auto mb-4 block max-w-none" src="https://www.adspeed.com/placeholder-300x250.gif"
   />
   </x-col>
   <x-col class="basis-full sm:basis-1/2 lg:basis-full">
-    <img class="mx-auto mt-4 block max-w-none" src="https://www.adspeed.com/placeholder-300x250.gif"
+    <img class="mx-auto mb-4 block max-w-none" src="https://www.adspeed.com/placeholder-300x250.gif"
   />
   </x-col>
   <x-col class="basis-full">
-    <img class="mx-auto mt-4 block max-w-none" src="https://www.adspeed.com/placeholder-300x50.gif"
+    <img class="mx-auto mb-4 block max-w-none" src="https://www.adspeed.com/placeholder-300x50.gif"
   />
   </x-col>
 </x-row>
@@ -29,9 +29,9 @@
     </x-col>
   @endforeach
   <x-col class="w-full">
-    <p class="mb-2 ml-auto text-base"><a href="#">More news &raquo;</a></p>
+    <p class="mb-4 -mt- ml-auto text-base"><a href="#">More news &raquo;</a></p>
     <img
-      class="mx-auto mt-4 block max-w-none"
+      class="mx-auto mb-4 block max-w-none"
       src="https://www.adspeed.com/placeholder-300x250.gif"
     />
   </x-col>
@@ -52,9 +52,9 @@
     </x-col>
   @endforeach
   <x-col class="w-full">
-    <p class="mb-2 ml-auto text-base"><a href="#">More Interviews &raquo;</a></p>
+    <p class="mb-4 -mt- ml-auto text-base"><a href="#">More Interviews &raquo;</a></p>
     <img
-      class="mx-auto mt-4 block max-w-none"
+      class="mx-auto mb-4 block max-w-none"
       src="https://www.adspeed.com/placeholder-300x250.gif"
     />
   </x-col>  
@@ -76,9 +76,9 @@
     </x-col>
   @endforeach
   <x-col class="w-full">
-    <p class="mb-2 ml-auto text-base"><a href="#">More Rockum Radio &raquo;</a></p>
+    <p class="mb-4 -mt- ml-auto text-base"><a href="#">More Rockum Radio &raquo;</a></p>
     <img
-      class="mx-auto mt-4 block max-w-none"
+      class="mx-auto mb-4 block max-w-none"
       src="https://www.adspeed.com/placeholder-300x250.gif"
     />
   </x-col>
@@ -99,9 +99,9 @@
     </x-col>
   @endforeach
   <x-col class="w-full">
-    <p class="mb-2 ml-auto text-base"><a href="#">More reviews &raquo;</a></p>
+    <p class="mb-4 -mt- ml-auto text-base"><a href="#">More reviews &raquo;</a></p>
     <img
-      class="mx-auto mt-4 block max-w-none"
+      class="mx-auto mb-4 block max-w-none"
       src="https://www.adspeed.com/placeholder-300x250.gif"
     />
   </x-col>  

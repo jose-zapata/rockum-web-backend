@@ -12,7 +12,9 @@
     <x-section class="main mb-4">
       <x-row class="flex-wrap lg:flex-nowrap">
         <x-col class="main-content">
-          <x-full-story.hero :story="$interview"></x-full-story.hero>
+          <x-hero :imagen="$interview->imagen">
+            {!! $interview->titulo !!}
+          </x-hero>
           <div class="hidden xl:block"><img class="max-w-none mx-auto my-4 block" src="https://www.adspeed.com/placeholder-728x90.gif"></div>
           <div class="hidden md:block xl:hidden"><img class="max-w-none mx-auto my-4 block" src="https://www.adspeed.com/placeholder-468x60.gif"></div>
           <div class="block md:hidden"><img class="max-w-none mx-auto my-4 block" src="https://www.adspeed.com/placeholder-300x50.gif"></div>

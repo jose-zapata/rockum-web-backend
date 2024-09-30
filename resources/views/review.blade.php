@@ -4,6 +4,7 @@
       .video {
         aspect-ratio: 16 / 9;
       }
+
       .video iframe {
         width: 100%;
         height: 100%;
@@ -12,7 +13,10 @@
     <x-section class="main mb-4">
       <x-row class="flex-wrap lg:flex-nowrap">
         <x-col class="main-content">
-          <x-full-review.hero :review="$review"></x-full-review.hero>
+          <x-hero :imagen="$review->imagen" image_class="max-w-lg">
+            {!! $review->album !!}<br />
+            <span class="text-base sm:text-xl md:text-3xl">{!! $review->banda !!}</span>
+          </x-hero>
           <div class="hidden xl:block"><img
               class="mx-auto my-4 block max-w-none"
               src="https://www.adspeed.com/placeholder-728x90.gif"
@@ -26,6 +30,11 @@
               src="https://www.adspeed.com/placeholder-300x50.gif"
             ></div>
           <div class="mb-4">{!! nl2br($review->texto) !!}</div>
+          @if (!empty($review->video))
+            <div class="video mb-4">
+              {!! $review->video !!}
+            </div>
+          @endif
           @if (!empty($review->imagenbanda))
             <img
               class="mb-4 block w-full object-cover"
@@ -40,15 +49,33 @@
           @endif
           <div class="mb-4">
             <h2 class="text-xl"><b>Details</b></h2>
-            @if (!empty($review->genero))<p>Genre: {{ trim($review->genero) }}</p>@endif
-            @if (!empty($review->tiempo))<p>Length: {{ trim($review->tiempo) }}</p>@endif
-            @if (!empty($review->format))<p>Format: {{ trim($review->format) }}</p>@endif
-            @if (!empty($review->productor))<p>Producer: {{ trim($review->productor) }}</p>@endif
-            @if (!empty($review->codigo))<p>Barcode ID: {{ trim($review->codigo) }}</p>@endif
-            @if (!empty($review->produccion))<p>Production: {{ trim($review->produccion) }}</p>@endif
-            @if (!empty($review->sello))<p>Label: {{ trim($review->sello) }}</p>@endif
-            @if (!empty($review->country))<p>Country: {{ trim($review->country) }}</p>@endif
-            @if (!empty($review->lanzamiento))<p>Released date: {{ trim($review->lanzamiento) }}</p>@endif
+            @if (!empty($review->genero))
+              <p>Genre: {{ trim($review->genero) }}</p>
+            @endif
+            @if (!empty($review->tiempo))
+              <p>Length: {{ trim($review->tiempo) }}</p>
+            @endif
+            @if (!empty($review->format))
+              <p>Format: {{ trim($review->format) }}</p>
+            @endif
+            @if (!empty($review->productor))
+              <p>Producer: {{ trim($review->productor) }}</p>
+            @endif
+            @if (!empty($review->codigo))
+              <p>Barcode ID: {{ trim($review->codigo) }}</p>
+            @endif
+            @if (!empty($review->produccion))
+              <p>Production: {{ trim($review->produccion) }}</p>
+            @endif
+            @if (!empty($review->sello))
+              <p>Label: {{ trim($review->sello) }}</p>
+            @endif
+            @if (!empty($review->country))
+              <p>Country: {{ trim($review->country) }}</p>
+            @endif
+            @if (!empty($review->lanzamiento))
+              <p>Released date: {{ trim($review->lanzamiento) }}</p>
+            @endif
           </div>
           @if (!empty($review->tracklist))
             <div class="mb-4">

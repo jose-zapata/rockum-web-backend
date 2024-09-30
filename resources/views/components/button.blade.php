@@ -76,7 +76,7 @@
 @endphp
 @if ($link)
   <a 
-    href="#"  
+    href="#"
     @class([
       $attributes['class'],
       "inline-block py-2 px-4 rounded {$bgcolor} {$textcolor} {$bordercolor} {$bghovercolor} {$texthovercolor} {$borderhovercolor} {$border}"

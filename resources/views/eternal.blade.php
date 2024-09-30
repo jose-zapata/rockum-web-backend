@@ -12,7 +12,11 @@
     <x-section class="main mb-4">
       <x-row class="flex-wrap lg:flex-nowrap">
         <x-col class="main-content">
-          <x-full-eternal.hero :eternal="$eternal"></x-full-eternal.hero>
+          <x-hero :imagen="$eternal->imagen" image_class="max-w-lg">
+            {!! $eternal->artista !!}<br />
+            <span class="text-xl sm:text-2xl md:text-3xl">{!! $eternal->bandas !!}</span><br />
+            <span class="text-base sm:text-xl md:text-2xl">{!! $eternal->fechabd !!}</span>
+          </x-hero>
           <div class="hidden xl:block"><img
               class="mx-auto my-4 block max-w-none"
               src="https://www.adspeed.com/placeholder-728x90.gif"
@@ -26,7 +30,7 @@
               src="https://www.adspeed.com/placeholder-300x50.gif"
             ></div>
           <div class="mb-4">{!! nl2br($eternal->texto) !!}</div>
-          @if (!empty($eternal->imagen))
+          @if (!empty($eternal->imagenbanda))
             <img
               class="mb-4 block w-full object-cover"
               src="{{ $eternal->imagenbanda }}"

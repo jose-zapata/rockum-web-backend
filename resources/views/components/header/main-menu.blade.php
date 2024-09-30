@@ -31,17 +31,17 @@
       <x-header.navbar.dropdown-menu class="px-3 py-2 border-0 lg:h-full" label="Radio" id="radio">
         <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Episodes</x-header.navbar.item>
         <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Podcasts</x-header.navbar.item>
-        <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Rockum Radio</x-header.navbar.item>
+        <x-header.navbar.item class="px-3 py-2 lg:w-48" href="/radio">Rockum Radio</x-header.navbar.item>
         <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Submissions</x-header.navbar.item>
       </x-header.navbar.dropdown-menu>
       <x-header.navbar.dropdown-menu class="px-3 py-2 border-0 lg:h-full" label="Rockum TV" id="rockum-tv">
         <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">Episodes</x-header.navbar.item>
       </x-header.navbar.dropdown-menu>
-      <x-header.navbar.item class="px-3 py-2" href="#">Interviews</x-header.navbar.item>
-      <x-header.navbar.item class="px-3 py-2" href="#">News</x-header.navbar.item>
-      <x-header.navbar.item class="px-3 py-2" href="#">Reviews</x-header.navbar.item>
-      <x-header.navbar.item class="px-3 py-2" href="#">Eternal</x-header.navbar.item>
-      <x-header.navbar.item class="px-3 py-2" href="#">Español</x-header.navbar.item>
+      <x-header.navbar.item class="px-3 py-2" href="/interviews">Interviews</x-header.navbar.item>
+      <x-header.navbar.item class="px-3 py-2" href="/stories">News</x-header.navbar.item>
+      <x-header.navbar.item class="px-3 py-2" href="/reviews">Reviews</x-header.navbar.item>
+      <x-header.navbar.item class="px-3 py-2" href="/eternal">Eternal</x-header.navbar.item>
+      <x-header.navbar.item class="px-3 py-2" href="/spanish">Español</x-header.navbar.item>
       <x-header.navbar.item class="px-3 py-2" href="#">Concerts</x-header.navbar.item>
       <x-header.navbar.dropdown-menu class="px-3 py-2 border-0 lg:h-full" label="More" id="more">
         <x-header.navbar.item class="px-3 py-2 lg:w-48" href="#">About Rockum</x-header.navbar.item>
